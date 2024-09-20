@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel-Smart</title>
+
+    <!-- 
+    - custom css link
+  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="assets/images/logo11 (1).jpg" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a68566b9c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-top">
+        <div class="container">
+          <div class="logo-wrapper">
+            <div class="logo-img">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo11 (1).jpg" alt="" />
+              </a>
+            </div>
+            <div class="logo-name">
+              <p>Travel Smart</p>
+            </div>
+          </div>
+
+          <div class="header-btn-group">
+            <div class="search-box">
+              <input
+                type="text"
+                class="search-box-holder"
+                placeholder="Search destinations..."
+              />
+              <i class="fa fa-search"></i>
+            </div>
+
+            <button
+              class="nav-open-btn"
+              aria-label="Open Menu"
+              data-nav-open-btn
+            >
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+          </ul>
+
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo-blue.svg" alt="" />
+              </a>
+
+              <button
+                class="nav-close-btn"
+                aria-label="Close Menu"
+                data-nav-close-btn
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>home</a>
+              </li>
+
+              <li>
+                <a href="#about" class="navbar-link" data-nav-link>about us</a>
+              </li>
+
+              <li>
+                <a href="#destination" class="navbar-link" data-nav-link
+                  >destination</a
+                >
+              </li>
+
+              <li>
+                <a href="#package" class="navbar-link" data-nav-link
+                  >packages</a
+                >
+              </li>
+
+              <li>
+                <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
+              </li>
+
+              <li>
+                <a href="#contact" class="navbar-link" data-nav-link
+                  >contact us</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button class="btn btn-primary nav-btn">Book Now</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero" id="home">
+          <div class="container">
+            <h2 class="h1 hero-title">Journey to explore world</h2>
+
+            <p class="hero-text">
+              Discover the world with us! At Travel Smart, we create
+              unforgettable travel experiences tailored to your dreams. Whether
+              you're seeking adventure, relaxation, or cultural immersion, our
+              expert team is here to guide you every step of the way. Start your
+              journey today and explore the world with ease, comfort, and style.
+            </p>
+
+            <div class="btn-group">
+              <button class="btn btn-primary">Learn more</button>
+
+              <button class="btn btn-secondary">Book now</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #TOUR SEARCH
+      -->
+
+        <section class="tour-search">
+          <div class="container">
+            <form action="" class="tour-search-form">
+              <div class="input-wrapper">
+                <label for="destination" class="input-label"
+                  >Search Destination*</label
+                >
+
+                <input
+                  type="text"
+                  name="destination"
+                  id="destination"
+                  required
+                  placeholder="Enter Destination"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="people" class="input-label">Pax Number*</label>
+
+                <input
+                  type="number"
+                  name="people"
+                  id="people"
+                  required
+                  placeholder="No.of People"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="checkin" class="input-label">Checkin Date**</label>
+
+                <input
+                  type="date"
+                  name="checkin"
+                  id="checkin"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="checkout" class="input-label">Checkout Date*</label>
+
+                <input
+                  type="date"
+                  name="checkout"
+                  id="checkout"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-secondary">
+                Inquire now
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+          <div class="section__container about__container">
+            <div class="about__content">
+              <h2 class="section__header">About us</h2>
+              <p class="section__subheader">
+                Our mission is to ignite the spirit of discovery in every
+                traveler's heart, offering meticulously crafted itineraries that
+                blend adrenaline-pumping activities with awe-inspiring
+                landscapes. With a team of seasoned globetrotters, we ensure
+                that every expedition is infused with excitement, grace our
+                planet. Embark on a voyage of a lifetime with us, as we redefine
+                the art of exploration.
+              </p>
+              <div class="about__flex">
+                <div class="about__card">
+                  <h4>268+</h4>
+                  <p>Completed Trips</p>
+                </div>
+                <div class="about__card">
+                  <h4>176+</h4>
+                  <p>Tour Guides</p>
+                </div>
+                <div class="about__card">
+                  <h4>153+</h4>
+                  <p>Destinations</p>
+                </div>
+              </div>
+              <button class="btn">
+                Read More <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+            <div class="about__image">
+              <img src="assets/images/greece-2197996_640.jpg" alt="about" />
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #POPULAR
+      -->
+
+        <section class="popular" id="destination">
+          <div class="container">
+            <p class="section-subtitle">Uncover place</p>
+
+            <h2 class="h2 section-title">Popular destination</h2>
+
+            <p class="section-text">
+              Explore top destinations! From sun-soaked beaches to historic
+              landmarks, discover must-visit spots and start planning your next
+              adventure. This keeps it concise while still highlighting the main
+              idea.
+            </p>
+
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/popular place1.jpg"
+                      alt="San miguel, italy"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">Grecee</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Satorini</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Stunning sunsets, whitewashed buildings, crystal waters.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/pupular-place2.jpg"
+                      alt="Burj khalifa, dubai"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">New York</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Statue of Liberty</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Iconic symbol, towering statue, freedom beacon.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/popular-place3.jpg"
+                      alt="Kyoto temple, japan"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">Paris, France</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Eiffel Tower</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Architectural marvel, romantic landmark, Parisian icon.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <button class="btn btn-primary">More destintion</button>
+          </div>
+        </section>
+
+        <!-- hotels -->
+
+        <section class="hotels" id="destination">
+          <h1>The Most Memorable Rest Time Starts Here.</h1>
+          <div class="image-all">
+            <div class="hotel-image-details">
+              <div class="hotel-image">
+                <img src="assets/images/room-1.jpg" alt="" />
+              </div>
+              <div class="hotel-details">
+                <div class="hotel-rating">
+                  <h3>Double Room</h3>
+                  <div class="hotel-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p>
+                  Comfortable room with a double bed, ideal for couples or
+                  friends seeking a relaxed, cozy experience.<strong>
+                    $299/night</strong
+                  >
+                </p>
+              </div>
+              <button class="hotel-btn">Book Now</button>
+            </div>
+            <div class="hotel-image-details">
+              <div class="hotel-image">
+                <img src="assets/images/room-2.jpg" alt="" />
+              </div>
+              <div class="hotel-details">
+                <div class="hotel-rating">
+                  <h3>Executive Cityscape Room</h3>
+                  <div class="hotel-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p>
+                  Stylish and spacious, offering enhanced amenities ideal for
+                  business travelers seeking convenience.
+                  <strong> $509/night</strong>
+                </p>
+              </div>
+              <button class="hotel-btn">Book Now</button>
+            </div>
+            <div class="hotel-image-details">
+              <div class="hotel-image">
+                <img src="assets/images/room-3.jpg" alt="" />
+              </div>
+              <div class="hotel-details">
+                <div class="hotel-rating">
+                  <h3>Family Garden Retreat</h3>
+                  <div class="hotel-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p>
+                  Spacious and inviting, perfect for creating cherished memories
+                  with loved ones. Starting from. <strong> $319/night</strong>
+                </p>
+              </div>
+              <button class="hotel-btn">Book Now</button>
+            </div>
+            <div class="hotel-image-details">
+              <div class="hotel-image">
+                <img src="assets/images/room-4.jpg" alt="" />
+              </div>
+              <div class="hotel-details">
+                <div class="hotel-rating">
+                  <h3>Quad Room</h3>
+                  <div class="hotel-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p>
+                  Large room featuring four beds, providing ample space for
+                  families or groups traveling together comfortably.<strong>
+                    $325/night</strong
+                  >.
+                </p>
+              </div>
+              <button class="hotel-btn">Book Now</button>
+            </div>
+            <div class="hotel-image-details">
+              <div class="hotel-image">
+                <img src="assets/images/room-5.jpg" alt="" />
+              </div>
+              <div class="hotel-details">
+                <div class="hotel-rating">
+                  <h3>Presidential Suite</h3>
+                  <div class="hotel-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="rating-icons"></div>
+                <p>
+                  Luxuriously spacious, with multiple rooms and top-tier
+                  amenities, offering unmatched privacy, comfort, and
+                  exclusivity.<strong> $299/night</strong>
+                </p>
+              </div>
+              <button class="hotel-btn">Book Now</button>
+            </div>
+
+            <div class="hotel-image-details">
+              <div class="hotel-image">
+                <img src="assets/images/room-6.jpg" alt="" />
+              </div>
+              <div class="hotel-details">
+                <div class="hotel-rating">
+                  <h3>Studio Room</h3>
+                  <div class="hotel-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p>
+                  Open-plan room combining living, sleeping, and dining areas,
+                  perfect for long stays or independent travelers.<strong>
+                    $410/night</strong
+                  >.
+                </p>
+              </div>
+              <button class="hotel-btn">Book Now</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #PACKAGE
+      -->
+
+        <section class="package" id="package">
+          <div class="container">
+            <p class="section-subtitle">Popular Packeges</p>
+
+            <h2 class="h2 section-title">Checkout Our Packeges</h2>
+
+            <p class="section-text">
+              "Smiling adventurers embracing new cultures and landscapes,
+              capturing unforgettable moments together on an exciting,
+              life-changing journey."
+            </p>
+
+            <ul class="package-list">
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/packege-1.jpg"
+                      alt="Experience The Great Holiday On Beach"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      Experience The Great Holiday On Beach
+                    </h3>
+
+                    <p class="card-text">
+                      Experience the ultimate beach getaway! Relax on pristine
+                      shores, soak in the sun, and enjoy the perfect escape by
+                      the sea.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">7D/6N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">Jamiaca</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(25 reviews)</p>
+
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+
+                    <p class="price">
+                      #750
+                      <span>/ per person</span>
+                    </p>
+
+                    <button class="btn btn-secondary">Book Now</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/packege-2.jpg"
+                      alt="Summer Holiday To The Oxolotan River"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      Summer Holiday To The Oxolotan River
+                    </h3>
+
+                    <p class="card-text">
+                      Discover a refreshing summer escape at the Oxolotan River!
+                      Immerse yourself in nature, adventure, and unforgettable
+                      moments by the water.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">7D/6N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">Mexico</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(20 reviews)</p>
+
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+
+                    <p class="price">
+                      #520
+                      <span>/ per person</span>
+                    </p>
+
+                    <button class="btn btn-secondary">Book Now</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/packege-3.jpg"
+                      alt="Santorini Island's Weekend Vacation"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      Santorini Island's Weekend Vacation
+                    </h3>
+
+                    <p class="card-text">
+                      Enjoy a dream weekend getaway on Santorini Island!
+                      Experience stunning sunsets, charming streets, and the
+                      magic of this iconic paradise.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">7D/6N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">Santorini</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(40 reviews)</p>
+
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+
+                    <p class="price">
+                      #660
+                      <span>/ per person</span>
+                    </p>
+
+                    <button class="btn btn-secondary">Book Now</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <button class="btn btn-primary">View All Packages</button>
+          </div>
+        </section>
+
+        <!-- 
+        - #GALLERY
+      -->
+
+        <section class="gallery" id="gallery">
+          <div class="container">
+            <p class="section-subtitle">Photo Gallery</p>
+
+            <h2 class="h2 section-title">Photo's From Travellers</h2>
+
+            <p class="section-text">
+              Smiling adventurers embracing new cultures and landscapes,
+              capturing unforgettable moments together on an exciting,
+              life-changing journey.
+            </p>
+
+            <ul class="gallery-list">
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./assets/images/person1.jfif" alt="Gallery image" />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./assets/images/person2.jfif" alt="Gallery image" />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/people traveling.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/popular-added1.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/popular-added2.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CTA
+      -->
+
+        <section class="section__container client__container">
+          <h2 class="section__header">Loved By Over Thousand Travelers</h2>
+          <p class="section__description">
+            Discover the stories of wanderlust and cherished memories through
+            the eyes of our valued clients.
+          </p>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="client__card">
+                  <div class="client__content">
+                    <div class="client__rating">
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                    </div>
+                    <p>
+                      Skywings has completely transformed my travel experience.
+                      From finding hidden gems in bustling cities to discovering
+                      serene retreats off the beaten path, every detail was
+                      thoughtfully arranged. I can't recommend Skywings enough
+                      for anyone looking to elevate their travel experience!
+                    </p>
+                  </div>
+                  <div class="client__details">
+                    <img src="assets/images/client-1.jpg" alt="client" />
+                    <div>
+                      <h4>John Adams</h4>
+                      <h5>Travel Blogger</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client__card">
+                  <div class="client__content">
+                    <div class="client__rating">
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                    </div>
+                    <p>
+                      My recent adventure with Skywings was nothing short of
+                      spectacular. The personalized itineraries and
+                      recommendations they provided led me to extraordinary
+                      locations that I would never have found on my own. I'm
+                      already planning my next adventure with them!
+                    </p>
+                  </div>
+                  <div class="client__details">
+                    <img src="assets/images/client-2.jpg" alt="client" />
+                    <div>
+                      <h4>Emily Thompson</h4>
+                      <h5>Adventure Enthusiast</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client__card">
+                  <div class="client__content">
+                    <div class="client__rating">
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                    </div>
+                    <p>
+                      Skywings offered a transformative experience for my
+                      research into historical landmarks. The unique aerial
+                      perspectives and provided a new level of appreciation and
+                      insight into the sites I studied. I highly recommend their
+                      services to fellow historians and cultural enthusiasts.
+                    </p>
+                  </div>
+                  <div class="client__details">
+                    <img src="assets/images/client-3.jpg" alt="client" />
+                    <div>
+                      <h4>Sarah Lee</h4>
+                      <h5>Cultural Historian</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client__card">
+                  <div class="client__content">
+                    <div class="client__rating">
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                    </div>
+                    <p>
+                      Finding a balance between work and travel can be
+                      challenging, but Skywings made it effortless. Their
+                      efficient planning and excellent recommendations helped me
+                      maximize my downtime and enjoy every moment of my trip. I
+                      look forward to working with them again on future travels.
+                    </p>
+                  </div>
+                  <div class="client__details">
+                    <img src="assets/images/client-4.jpg" alt="client" />
+                    <div>
+                      <h4>David Patel</h4>
+                      <h5>Business Executive</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- <section class="cta" id="contact">
+          <div class="container">
+            <div class="cta-content">
+              <p class="section-subtitle">Call To Action</p>
+
+              <h2 class="h2 section-title">
+                Ready For Unforgatable Travel. Remember Us!
+              </h2>
+
+              <p class="section-text">
+                Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec
+                nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia
+                tenetur, aptent.
+              </p>
+            </div>
+
+            <button class="btn btn-secondary">Contact Us !</button>
+          </div>
+        </section> -->
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer" id="contact">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo11 (1).jpg" alt="" />
+              </a>
+              <div class="logo-name">
+                <p>Travel Smart</p>
+              </div>
+            </div>
+            <p class="footer-text">
+              Your journey begins with us. Explore the world confidently with
+              personalized travel experiences and exceptional service. Follow us
+              on social media for travel inspiration and exclusive offers.
+            </p>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="contact-title">Contact Us</h4>
+
+            <p class="contact-text">Feel free to contact and reach us !!</p>
+
+            <ul>
+              <li class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <a href="tel:+2347026161193" class="contact-link"
+                  >+234 (702) 616 1193</a
+                >
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <a href="mailto:info.tourly.com" class="contact-link"
+                  >info.travelSmart.com</a
+                >
+              </li>
+
+              <li class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+
+                <address>Dopemu, Akonwonjo, Lagos, Nigeria.</address>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3208293207813!2d3.3072916749936567!3d6.606996793386961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9171cc1003e7%3A0x41b094d0120d48e7!2sAptech%20Computer%20Education%2C%20Akowonjo!5e0!3m2!1sen!2sng!4v1726751749067!5m2!1sen!2sng"
+              width="400"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <form action="">
+            <h3>Kindly send us a mail for futher enquiry.</h3>
+
+            <div class="div-input">
+              <label for="">Name:</label>
+              <input
+                class="input-class"
+                type="text"
+                name="Name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="div-input">
+              <label for="">Email Address:</label>
+              <input
+                class="input-class"
+                type="email"
+                placeholder="E-mail"
+                required
+              />
+            </div>
+            <div>
+              <label for="">Message</label>
+              <textarea
+                name=""
+                id=""
+                rows="10"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+
+            <div class="footer-submit">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2023 <a href="">APEX-GroupE</a>. All rights reserved.
+          </p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Term & Condition</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
